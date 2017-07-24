@@ -28,14 +28,18 @@ ajax请求（包括http协议）
 ### 2. 浏览器
 
 >浏览器内核（Rendering Engine）：渲染引擎，有时还包括js引擎。渲染引擎主要是负责HTML、CSS以及其他一些东西的渲染，而JS引擎则主要负责对javascript的渲染
+
 - IE 6~11：Trident内核（又称IE内核）,对W3C标准支持差，从IE10开始支持ES6标准
 - Chrome：基于Webkit内核浏览器，一经安装就时刻保持自升级，所以不用管它的版本，最新版早就支持ES6
 - Safari：基于Webkit内核的浏览器，从OS X 10.7 Lion自带的6.1版本开始支持ES6
 - Firefox：Gecko内核
 - Opera：Presto内核（ 7.0及以上）
+
 >不同的浏览器对JavaScript支持的差异主要是，有些API的接口不一样，比如AJAX，File接口。对于ES6标准，不同的浏览器对各个特性支持也不一样。
+
 ### 3. BOM（browser object model）
 >BOM提供了独立于内容而与浏览器窗口进行交互的对象,主要用于管理窗口与窗口之间的通讯，因此其核心对象是window;由下列一系列相关的对象构成，并且每个对象都提供了很多方法与属性
+
 - navigator对象:浏览器的信息  
 appName：浏览器名称  
 appVersion：浏览器版本  
@@ -49,7 +53,8 @@ forward()方法：加载 history 列表中的下一个 URL。
 go()方法：相对当前所处的页面，加载 history 列表中的某个具体的页面。
 
 - location对象：前页面的URL信息  
-![location](images/location.png)
+![location.png](http://upload-images.jianshu.io/upload_images/5150805-11016fbd73e9ebe3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
  href：当前文档的完整URL  
 protocol ：协议  
 host：域名  
@@ -64,6 +69,7 @@ height,width: 屏幕高和宽
 
 ### 3.DOM(document object model)
 >W3C 文档对象模型 （DOM） 是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。
+
 - 数据结构：树
 - 节点: nodeName,nodeType,nodeValue  
 标签（元素）节点:元素名称，1，null  
@@ -114,10 +120,4 @@ Attribute是对html标签属性的修改
 获取父节点，子节点  
 增删节点，替换节点，
 - DOM节点的attr和property有什么区别？  
-前者是对html标签属性的修改，后者只是一个js对象的属性的修改  
-
-
-
-
-
-
+前者是对html标签属性的修改，后者只是一个js对象的属性的修改
