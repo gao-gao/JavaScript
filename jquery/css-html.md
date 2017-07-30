@@ -1,13 +1,4 @@
----
-layout:     post
-title:      "jquery-css,html"
-date:       2017-05-02
-categories: "jQuery"
-author:     "gaogao"
-tags:
- - jQuery   
-description: "获取设置属性；获取设置文档、文本、表单value；通过类增删样式；通过css()进行样式操作；尺寸设置和获取"
----
+
 ### 1. 获取设置属性
 attr()，提供回调函数。回调函数有两个参数：被选元素列表中当前元素的下标，以及原始（旧的）值。
 - .attr(属性名)：获取属性值  
